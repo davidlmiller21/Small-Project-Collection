@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script src="clock.js"></script>
+    <script src="hextodecimalconversion.js"></script>
+
+    <div>
+        <div class='clock'>
+            <div id="hour1"></div>
+        </div>
+
+        <div class='clock'>
+            <div id="minutes"></div>
+        </div>
+
+        <div class='clock'>
+            <div id="seconds"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="hexconverter">
+            <label for="user_input">Hex Number:</label>
+            <input type="text" id="user_input">
+        </div>
+
+        <div class="hexconverter">
+            <label for="decimal_conversion">Base-10:</label>
+            <input type="text" id="decimal_conversion" disabled>
+
+        </div>
+
+        <div class="hexconverter">
+            <button type="button" onclick="hexConvert()">Calculate!</button>
+        </div>
+    </div>
+
+    <div class="arrayChanger">
+        <label for="newArray">The array</label>
+        <input type="text" id="newArray" size="45" disabled>
+        <script src="removeSelected.js"></script>
+    </div>
+
+</body>
+</html>
